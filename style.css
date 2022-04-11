@@ -27,6 +27,7 @@ header > ul {
 header > ul a {
   text-decoration: none;
   color: white;
+  font-family: 'Lato';
 }
 
 header > ul a:hover {
@@ -49,6 +50,8 @@ header nav a {
   color: #272a31;
   text-decoration: none;
   font-size: 1.8em;
+  font-family: 'Lato';
+  font-weight: 700;
 }
 
 header nav a.active {
