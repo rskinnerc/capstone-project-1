@@ -8,9 +8,19 @@ li {
   list-style: none;
 }
 
+.lato {
+  font-family: 'Lato';
+}
+
+.cocogoose { 
+  font-family: 'Cocogoose';
+}
+
 header {
+  display: none;
+  position: absolute;
   height: 100vh;
-  /* position: absolute; */
+  width: 100%;
   background-color: white;
 }
 
@@ -27,7 +37,6 @@ header > ul {
 header > ul a {
   text-decoration: none;
   color: white;
-  font-family: 'Lato';
   font-size: 0.9em;
 }
 
@@ -58,7 +67,6 @@ header nav a {
   color: #272a31;
   text-decoration: none;
   font-size: 1.8em;
-  font-family: 'Lato';
   font-weight: 700;
 }
 
@@ -72,3 +80,42 @@ header nav a.highlighted-menu {
   color: #ee523c;
 }
 
+#headline {
+  background-image: url('./media/home_bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 12px;
+}
+
+#headline > i {
+  cursor: pointer;
+  font-size: 4em;
+  color: #515151;
+}
+
+#headline > h1 {
+  background: linear-gradient(to right, #f11904, #a60000, #f6551b, #ef3204);
+  background-clip: text;
+  color: transparent;
+  margin: 24px 0;
+}
+
+#headline > h2,
+#headline > h4 {
+  color: #4f4f4f;
+  margin: 16px 0;
+}
+
+#headline > h3 {
+  color: #ee523c;
+  margin: 24px 0;
+}
+
+#headline > p {
+  background-color: #f7f7f7;
+  border: 4px white solid;
+  padding: 12px;
+  color: #272a31;
+  line-height: 1.5em;
+}
