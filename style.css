@@ -28,6 +28,7 @@ header > ul a {
   text-decoration: none;
   color: white;
   font-family: 'Lato';
+  font-size: 0.9em;
 }
 
 header > ul a:hover {
@@ -46,6 +47,13 @@ header nav {
   padding: 24px 24px;
 }
 
+header nav > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
 header nav a {
   color: #272a31;
   text-decoration: none;
@@ -58,9 +66,9 @@ header nav a.active {
   color: #ee523c
 }
 
-header nav > ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 24px;
+header nav a.highlighted-menu {
+  border: 4px #ee523c solid;
+  padding: 6px 10px;
+  color: #ee523c;
 }
+
