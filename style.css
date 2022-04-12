@@ -389,8 +389,9 @@ section.about-details h2 span,
 
 #partners > ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 10px;
   margin: 24px 0;
@@ -412,6 +413,23 @@ footer {
 
 .logo {
   width: 180px;
+}
+
+footer {
+  padding: 2.2em 12px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer.about-footer img.desktop {
+  display: none;
+}
+
+footer.about-footer img.mobile {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -576,19 +594,28 @@ footer {
     font-size: 24px;
   }
 
-  #partners > ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 10px;
-  }
-
   footer {
     padding: 3.2em 10%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  }
+
+  footer.about-footer{
+    background-color: #2e2e2e;
+  }
+
+  footer.about-footer p {
+    color: #e8eae9;
+  }
+
+  footer.about-footer img.mobile {
+    display: none;
+  }
+
+  footer.about-footer img.desktop {
+    display: block;
+  }
+
+  #partners.partners-about {
+    display: none;
   }
 }
