@@ -343,4 +343,30 @@ footer {
   header nav ul li.logo-container {
     justify-self: start;
   }
+
+  #headline {
+    background-image: url('./media/home_bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 8% 10%;
+    margin: 0 auto;
+  }
+
+  #headline > i {
+    display: none;
+  }
+
+  #headline > h1 {
+    font-size: 43px;
+    width: 70%;
+  }
+
+  #headline > h3 {
+    font-size: 32px;
+  }
+
+  #headline > p {
+    width: 60%;
+  }
 }
