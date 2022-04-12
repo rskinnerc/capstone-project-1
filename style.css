@@ -176,7 +176,7 @@ footer > p {
 }
 
 #program-outline li p {
-  color: #fff;
+  color: #d3d3d3;
   font-size: 12px;
   flex-basis: 65%;
 }
@@ -414,9 +414,7 @@ footer {
   }
 
   #program-outline li p {
-    color: #fff;
     font-size: 16px;
-    flex-basis: 65%;
   }
 
   #join-btn {
@@ -473,5 +471,13 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
+  }
+
+  footer {
+    padding: 3.2em 10%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
