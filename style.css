@@ -196,3 +196,50 @@ header nav a.highlighted-menu {
   align-self: center;
   margin: 12px;
 }
+
+#featured-horses > ul {
+  padding: 24px 0px;
+}
+
+#featured-horses .horse-card {
+  display: flex;
+  gap:10px;
+  margin: 24px 0px;
+}
+
+.horse-card picture {
+  width: 30%;
+  background-image: url('./media/chess-background.jpg');
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.horse-card picture > img {
+  width: 84%;
+  margin-top: 13%;
+  margin-left: 13%;
+}
+
+.horse-card h3 {
+  font-size: 14px;
+  color: #272a31;
+}
+
+.horse-card h5 {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: normal;
+  color: #fd7667;
+  margin: 4px 0;
+}
+
+.horse-card hr {
+  width: 10%;
+  margin: 10px 0;
+  border: 1px #d3d3d3 solid;
+}
+
+.horse-card h6 {
+  color: #4e4e50;
+}
