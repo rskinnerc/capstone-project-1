@@ -140,7 +140,8 @@ header nav a.highlighted-menu {
   margin: 12px;
 }
 
-#program-outline > h2 span {
+#program-outline > h2 span,
+#featured-horses > h2 span {
   display: block;
   position: relative;
   top: 10px;
@@ -181,4 +182,17 @@ header nav a.highlighted-menu {
   background-color: #ff4f38;
   text-align: center;
   margin: 25px 0;
+}
+
+#featured-horses {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+#featured-horses > h2 {
+  color: #272a31;
+  font-size: 17px;
+  align-self: center;
+  margin: 12px;
 }
