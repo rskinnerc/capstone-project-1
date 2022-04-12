@@ -123,6 +123,12 @@ header nav a.highlighted-menu {
   margin: 24px 0;
 }
 
+footer > p {
+  font-size: 12px;
+  margin: 24px 0;
+  color: #4e4e50;
+}
+
 #headline > p {
   background-color: #f7f7f7;
   border: 4px white solid;
@@ -278,4 +284,12 @@ header nav a.highlighted-menu {
 #partners img {
   filter: grayscale(100%);
   width: 80%;
+}
+
+footer {
+  padding: 36px 12px;
+}
+
+.logo {
+  width: 200px;
 }
