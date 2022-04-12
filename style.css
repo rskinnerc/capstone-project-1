@@ -123,6 +123,7 @@ header nav a.highlighted-menu {
   background-repeat: no-repeat;
   background-position: left 100px;
   background-size: 300%;
+  background-color: #f7f7f7;
   padding: 12px 12px 36px;
 }
 
@@ -252,6 +253,59 @@ footer > p {
   display: none;
 }
 
+#about-logo {
+  border-bottom: 1px #ececec solid;
+}
+
+#about-logo > img {
+  border: 1px #ececec solid;
+  padding: 24px;
+  width: 90%;
+  align-self: center;
+}
+section.about-details {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 32px 24px;
+}
+
+section.about-details h2 {
+  color: #272a31;
+  font-size: 22px;
+  text-align: center;
+}
+
+section.about-details p {
+  color: #272a31;
+  text-align: center;
+  padding: 24px 0;
+}
+
+div.past-events figure { 
+  position: relative;
+  margin: 12px 0;
+}
+
+div.past-events figure > figcaption { 
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fcfdfe;
+  font-weight: 700;
+}
+
+div.past-events figure > figcaption > span { 
+  font-size: 1.5em;
+}
+
+div.past-events img {
+  width: 100%;
+  filter: grayscale(10%);
+}
+
 #featured-horses {
   display: flex;
   flex-direction: column;
@@ -323,6 +377,7 @@ footer > p {
 
 #program-outline > h2 span,
 #featured-horses > h2 span,
+section.about-details h2 span,
 #partners > h2 span {
   display: block;
   position: relative;
