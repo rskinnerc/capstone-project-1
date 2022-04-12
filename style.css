@@ -140,16 +140,6 @@ header nav a.highlighted-menu {
   margin: 12px;
 }
 
-#program-outline > h2 span,
-#featured-horses > h2 span {
-  display: block;
-  position: relative;
-  top: 10px;
-  left: 34%;
-  border-bottom: 1px #ee523c solid;
-  width: 32%;
-}
-
 #program-outline li {
   margin: 8px 0px;
   background-color: rgb(247, 247, 247, 0.12);
@@ -242,4 +232,47 @@ header nav a.highlighted-menu {
 
 .horse-card h6 {
   color: #4e4e50;
+}
+
+#partners {
+  background-color: #424242;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#partners > h2 {
+  color: #9f9fa1;
+  font-size: 17px;
+  align-self: center;
+  margin: 12px;
+}
+
+#program-outline > h2 span,
+#featured-horses > h2 span, 
+#partners > h2 span {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 34%;
+  border-bottom: 1px #ee523c solid;
+  width: 32%;
+}
+
+#partners > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin: 24px 0px;
+}
+#partners > ul li {
+  display: flex;
+  justify-content: center;
+}
+
+#partners img {
+  filter: grayscale(100%);
+  width: 80%;
 }
