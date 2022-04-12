@@ -9,11 +9,11 @@ li {
 }
 
 .lato {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
 }
 
-.cocogoose { 
-  font-family: 'Cocogoose';
+.cocogoose {
+  font-family: 'Cocogoose', sans-serif;
 }
 
 .hidden {
@@ -44,6 +44,13 @@ header > ul a {
   font-size: 0.9em;
 }
 
+header nav a {
+  color: #272a31;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
 header > ul a:hover {
   color: #d3d3d3;
 }
@@ -67,15 +74,8 @@ header nav > ul {
   gap: 24px;
 }
 
-header nav a {
-  color: #272a31;
-  text-decoration: none;
-  font-size: 1.8em;
-  font-weight: 700;
-}
-
 header nav a.active {
-  color: #ee523c
+  color: #ee523c;
 }
 
 header nav a.highlighted-menu {
@@ -100,7 +100,9 @@ header nav a.highlighted-menu {
 
 #headline > h1 {
   background: linear-gradient(to right, #f11904, #a60000, #f6551b, #ef3204);
-  background-clip: text;
+  background-clip: text; /* stylelint-disable-line */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
   margin: 24px 0;
 }
@@ -109,6 +111,11 @@ header nav a.highlighted-menu {
 #headline > h4 {
   color: #4f4f4f;
   margin: 16px 0;
+}
+
+.horse-card h3 {
+  font-size: 14px;
+  color: #272a31;
 }
 
 #headline > h3 {
@@ -141,7 +148,7 @@ header nav a.highlighted-menu {
 }
 
 #program-outline li {
-  margin: 8px 0px;
+  margin: 8px 0;
   background-color: rgb(247, 247, 247, 0.12);
   display: flex;
   gap: 8px;
@@ -149,7 +156,7 @@ header nav a.highlighted-menu {
   padding: 16px;
 }
 
-#program-outline li h3  {
+#program-outline li h3 {
   color: #ee523c;
   font-size: 16px;
   flex-basis: 25%;
@@ -188,13 +195,13 @@ header nav a.highlighted-menu {
 }
 
 #featured-horses > ul {
-  padding: 24px 0px;
+  padding: 24px 0;
 }
 
 #featured-horses .horse-card {
   display: flex;
-  gap:10px;
-  margin: 24px 0px;
+  gap: 10px;
+  margin: 24px 0;
 }
 
 .horse-card picture {
@@ -209,11 +216,6 @@ header nav a.highlighted-menu {
   width: 84%;
   margin-top: 13%;
   margin-left: 13%;
-}
-
-.horse-card h3 {
-  font-size: 14px;
-  color: #272a31;
 }
 
 .horse-card h5 {
@@ -249,7 +251,7 @@ header nav a.highlighted-menu {
 }
 
 #program-outline > h2 span,
-#featured-horses > h2 span, 
+#featured-horses > h2 span,
 #partners > h2 span {
   display: block;
   position: relative;
@@ -265,8 +267,9 @@ header nav a.highlighted-menu {
   align-items: center;
   justify-content: space-evenly;
   gap: 10px;
-  margin: 24px 0px;
+  margin: 24px 0;
 }
+
 #partners > ul li {
   display: flex;
   justify-content: center;
