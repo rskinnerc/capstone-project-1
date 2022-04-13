@@ -433,6 +433,10 @@ footer.about-footer img.mobile {
   display: block;
 }
 
+div.breadcrumbs {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   header {
     display: block;
@@ -489,6 +493,8 @@ footer.about-footer img.mobile {
     background-color: #f7f7f7;
     padding: 60px 20%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 
   #about-headline h5, #about-headline p, #about-headline p.about-info {
@@ -676,5 +682,33 @@ footer.about-footer img.mobile {
 
   #partners.partners-about {
     display: none;
+  }
+
+  div.breadcrumbs {
+    display: block;
+    position: relative;
+    right: -105%;
+    top: -30px;
+    font-weight: 500;
+    color: #2e2e2e;
+    font-size: 14px;
+  }
+
+  div.breadcrumbs i {
+    text-decoration: none;
+    color: #2e2e2e;
+  }
+
+  div.breadcrumbs a {
+    text-decoration: none;
+  }
+
+  div.breadcrumbs a:after {
+    content: '>';
+    color: #ee523c;
+    margin: 0 6px;
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 17px;
+    font-weight: 100;
   }
 }
