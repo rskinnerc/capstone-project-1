@@ -16,16 +16,17 @@ li {
   font-family: 'Cocogoose', sans-serif;
 }
 
-.hidden {
+.hidden,
+.mobile-hidden {
   display: none;
 }
 
 header {
-  display: none;
   position: absolute;
   height: 100vh;
   width: 100%;
   background-color: white;
+  z-index: 100;
 }
 
 header > ul {
@@ -434,6 +435,10 @@ div.breadcrumbs {
 }
 
 @media screen and (min-width: 768px) {
+  .mobile-hidden {
+    display: block;
+  }
+
   header {
     display: block;
     position: relative;
