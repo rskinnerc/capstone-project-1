@@ -16,7 +16,7 @@
 
 ## Project Introduction
 
-[Presentation Loom Video](https://rskinnerc.github.io/capstone-project-1/)
+[Presentation Loom Video](https://www.loom.com/share/eee8ee2a34a04f3f84726993bec85dc0)
 
 ## Getting Started
 

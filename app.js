@@ -44,7 +44,6 @@ const FEATURED_HORSES = [
 ];
 
 const toggleMenu = () => {
-  // header.classList.toggle('sliding-out');
   if (header.classList.length === 0) {
     header.classList.add('mobile-show');
     body.classList.add('lock-scroll');
