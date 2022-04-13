@@ -358,7 +358,7 @@ div.past-events figure > figcaption {
 }
 
 .horse-card picture {
-  width: 30%;
+  flex: 0 0 30%;
   background-image: url('./media/chess-background.jpg');
   background-size: 65%;
   background-repeat: no-repeat;
