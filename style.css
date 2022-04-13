@@ -263,6 +263,7 @@ footer > p {
   width: 90%;
   align-self: center;
 }
+
 section.about-details {
   display: flex;
   flex-direction: column;
@@ -581,6 +582,38 @@ footer.about-footer img.mobile {
     color: #d3d3d3;
     text-align: center;
     font-size: 20px;
+  }
+
+  section.about-details h2 span {
+    top: 10px;
+    left: 47%;
+    border-bottom: 1px #ee523c solid;
+    width: 6%;
+  }
+
+  #about-logo > img {
+    border: 1px #ececec solid;
+    padding: 24px 56px;
+    width: 70%;
+    align-self: center;
+  }
+
+  section.about-details {
+    padding: 56px 20%;
+    margin: 0 auto;
+  }
+
+  section.about-details p {
+    width: 80%;
+    text-align: center;
+    align-self: center;
+  }
+
+  div.past-events { 
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+    margin-top: 32px;
   }
 
   #featured-horses {
