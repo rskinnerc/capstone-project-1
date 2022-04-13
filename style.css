@@ -16,16 +16,46 @@ li {
   font-family: 'Cocogoose', sans-serif;
 }
 
-.hidden {
-  display: none;
+.hidden,
+.mobile-hidden {
+  animation: slide-out 1s forwards;
+}
+
+.mobile-show {
+  animation: slide-in 1s forwards;
+}
+
+.lock-scroll {
+  overflow: hidden;
 }
 
 header {
-  display: none;
   position: absolute;
   height: 100vh;
   width: 100%;
+  margin-left: -100%;
   background-color: white;
+  z-index: 100;
+}
+
+@keyframes slide-in {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: -100%;
+  }
 }
 
 header > ul {
@@ -357,7 +387,7 @@ div.past-events figure > figcaption {
 }
 
 .horse-card picture {
-  width: 30%;
+  flex: 0 0 30%;
   background-image: url('./media/chess-background.jpg');
   background-size: 65%;
   background-repeat: no-repeat;
@@ -434,10 +464,19 @@ div.breadcrumbs {
 }
 
 @media screen and (min-width: 768px) {
+  .mobile-hidden {
+    animation: none;
+  }
+
+  .lock-scroll {
+    overflow: auto;
+  }
+
   header {
     display: block;
     position: relative;
     height: auto;
+    margin-left: 0;
     box-shadow: 3px 1px 10px #909091;
   }
 
