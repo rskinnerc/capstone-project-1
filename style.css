@@ -112,6 +112,12 @@ header nav a.highlighted-menu {
   margin: 24px 0;
 }
 
+section.about-details h2 {
+  color: #272a31;
+  font-size: 22px;
+  text-align: center;
+}
+
 #headline > h2,
 #headline > h4 {
   color: #4f4f4f;
@@ -166,6 +172,26 @@ footer > p {
   color: #4e4e50;
 }
 
+section.about-details p {
+  color: #272a31;
+  text-align: center;
+  padding: 24px 0;
+}
+
+#headline > p {
+  background-color: #f7f7f7;
+  border: 4px white solid;
+  padding: 12px;
+  color: #272a31;
+  line-height: 1.5em;
+}
+
+#program-outline li p {
+  color: #d3d3d3;
+  font-size: 12px;
+  flex-basis: 65%;
+}
+
 #about-headline > p:first-of-type {
   background-color: #fff;
   border: 1px #ececec solid;
@@ -173,6 +199,14 @@ footer > p {
   color: #272a31;
   line-height: 1.5em;
   text-align: center;
+}
+
+.horse-card h5 {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: normal;
+  color: #fd7667;
+  margin: 4px 0;
 }
 
 #about-headline .about-info,
@@ -191,14 +225,6 @@ footer > p {
   font-size: 17px;
 }
 
-#headline > p {
-  background-color: #f7f7f7;
-  border: 4px white solid;
-  padding: 12px;
-  color: #272a31;
-  line-height: 1.5em;
-}
-
 #program-outline {
   background-image: url('./media/pattern_bg.png');
   background-size: 1.7em;
@@ -206,6 +232,22 @@ footer > p {
   display: flex;
   flex-direction: column;
   padding: 12px;
+}
+
+div.past-events figure > figcaption > span.caption {
+  font-size: 1.5em;
+}
+
+section.about-details h2 span,
+#program-outline > h2 span,
+#featured-horses > h2 span,
+#partners > h2 span {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 34%;
+  border-bottom: 1px #ee523c solid;
+  width: 32%;
 }
 
 #program-outline > h2 {
@@ -232,12 +274,6 @@ footer > p {
   flex-shrink: 0;
 }
 
-#program-outline li p {
-  color: #d3d3d3;
-  font-size: 12px;
-  flex-basis: 65%;
-}
-
 #join-btn {
   padding: 24px;
   text-decoration: none;
@@ -257,6 +293,17 @@ footer > p {
   border-bottom: 1px #ececec solid;
 }
 
+div.past-events img {
+  width: 100%;
+  filter: grayscale(10%);
+}
+
+.horse-card picture > img {
+  width: 84%;
+  margin-top: 13%;
+  margin-left: 13%;
+}
+
 #about-logo > img {
   border: 1px #ececec solid;
   padding: 24px;
@@ -271,24 +318,12 @@ section.about-details {
   padding: 32px 24px;
 }
 
-section.about-details h2 {
-  color: #272a31;
-  font-size: 22px;
-  text-align: center;
-}
-
-section.about-details p {
-  color: #272a31;
-  text-align: center;
-  padding: 24px 0;
-}
-
-div.past-events figure { 
+div.past-events figure {
   position: relative;
   margin: 12px 0;
 }
 
-div.past-events figure > figcaption { 
+div.past-events figure > figcaption {
   position: absolute;
   top: 50%;
   left: 0;
@@ -296,15 +331,6 @@ div.past-events figure > figcaption {
   text-align: center;
   color: #fcfdfe;
   font-weight: 700;
-}
-
-div.past-events figure > figcaption > span { 
-  font-size: 1.5em;
-}
-
-div.past-events img {
-  width: 100%;
-  filter: grayscale(10%);
 }
 
 #featured-horses {
@@ -338,20 +364,6 @@ div.past-events img {
   background-position: top left;
 }
 
-.horse-card picture > img {
-  width: 84%;
-  margin-top: 13%;
-  margin-left: 13%;
-}
-
-.horse-card h5 {
-  font-size: 13px;
-  font-style: italic;
-  font-weight: normal;
-  color: #fd7667;
-  margin: 4px 0;
-}
-
 .horse-card hr {
   width: 10%;
   margin: 10px 0;
@@ -376,18 +388,6 @@ div.past-events img {
   margin: 12px;
 }
 
-#program-outline > h2 span,
-#featured-horses > h2 span,
-section.about-details h2 span,
-#partners > h2 span {
-  display: block;
-  position: relative;
-  top: 10px;
-  left: 34%;
-  border-bottom: 1px #ee523c solid;
-  width: 32%;
-}
-
 #partners > ul {
   display: flex;
   flex-direction: row;
@@ -406,10 +406,6 @@ section.about-details h2 span,
 #partners img {
   filter: grayscale(100%);
   width: 80%;
-}
-
-footer {
-  padding: 36px 12px;
 }
 
 .logo {
@@ -442,7 +438,7 @@ div.breadcrumbs {
     display: block;
     position: relative;
     height: auto;
-    box-shadow:  3px 1px 10px #909091;
+    box-shadow: 3px 1px 10px #909091;
   }
 
   header > ul {
@@ -495,10 +491,34 @@ div.breadcrumbs {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
 
-  #about-headline h5, #about-headline p, #about-headline p.about-info {
+  section.about-details p {
+    width: 80%;
+    text-align: center;
+    align-self: center;
+  }
+
+  .horse-card h5 {
+    font-size: 16px;
+  }
+
+  footer.about-footer p {
+    color: #e8eae9;
+  }
+
+  #about-headline h5,
+  #about-headline p,
+  #about-headline p.about-info {
     margin-top: 24px;
+  }
+
+  section.about-details h2 span {
+    top: 10px;
+    left: 47%;
+    border-bottom: 1px #ee523c solid;
+    width: 6%;
   }
 
   #about-headline h1 span {
@@ -508,6 +528,11 @@ div.breadcrumbs {
     left: 48%;
     border-bottom: 1px #ee523c solid;
     width: 4%;
+  }
+
+  div.breadcrumbs i {
+    text-decoration: none;
+    color: #2e2e2e;
   }
 
   #headline > i,
@@ -590,13 +615,6 @@ div.breadcrumbs {
     font-size: 20px;
   }
 
-  section.about-details h2 span {
-    top: 10px;
-    left: 47%;
-    border-bottom: 1px #ee523c solid;
-    width: 6%;
-  }
-
   #about-logo > img {
     border: 1px #ececec solid;
     padding: 24px 56px;
@@ -609,13 +627,7 @@ div.breadcrumbs {
     margin: 0 auto;
   }
 
-  section.about-details p {
-    width: 80%;
-    text-align: center;
-    align-self: center;
-  }
-
-  div.past-events { 
+  div.past-events {
     display: flex;
     justify-content: space-evenly;
     gap: 16px;
@@ -639,11 +651,7 @@ div.breadcrumbs {
   #featured-horses .horse-card {
     display: flex;
     gap: 10px;
-    flex: 1 1 50%
-  }
-
-  .horse-card h5 {
-    font-size: 16px;
+    flex: 1 1 50%;
   }
 
   .horse-card h6 {
@@ -664,12 +672,8 @@ div.breadcrumbs {
     margin: 0 auto;
   }
 
-  footer.about-footer{
+  footer.about-footer {
     background-color: #2e2e2e;
-  }
-
-  footer.about-footer p {
-    color: #e8eae9;
   }
 
   footer.about-footer img.mobile {
@@ -694,16 +698,11 @@ div.breadcrumbs {
     font-size: 14px;
   }
 
-  div.breadcrumbs i {
-    text-decoration: none;
-    color: #2e2e2e;
-  }
-
   div.breadcrumbs a {
     text-decoration: none;
   }
 
-  div.breadcrumbs a:after {
+  div.breadcrumbs a::after {
     content: '>';
     color: #ee523c;
     margin: 0 6px;
