@@ -3,6 +3,7 @@ const closeMenuBtn = document.querySelector('i.close-menu');
 const header = document.querySelector('header');
 const horseCardSkeleton = document.querySelector('#horse-card-skeleton');
 const featuredHorses = document.querySelector('#featured-horses ul');
+const body = document.querySelector('body');
 const FEATURED_HORSES = [
   {
     name: 'C Runner',
@@ -43,7 +44,19 @@ const FEATURED_HORSES = [
 ];
 
 const toggleMenu = () => {
-  header.classList.toggle('mobile-hidden');
+  // header.classList.toggle('sliding-out');
+  if (header.classList.length === 0) {
+    header.classList.add('mobile-show');
+    body.classList.add('lock-scroll');
+  } else if (header.classList.contains('mobile-hidden')) {
+    header.classList.add('mobile-show');
+    body.classList.add('lock-scroll');
+    header.classList.remove('mobile-hidden');
+  } else {
+    header.classList.remove('mobile-show');
+    body.classList.remove('lock-scroll');
+    header.classList.add('mobile-hidden');
+  }
 };
 
 if (horseCardSkeleton) {
