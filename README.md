@@ -2,55 +2,48 @@
 
 # Project Name
 
-> Description the project.
-
+> This is Microverse's first capstone project, where I built a mobile and desktop website for a fictional horse race event implementing the concepts I have earned in the first module: CSS, HTML, and JavaScript
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JavaScript
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rskinnerc.github.io/capstone-project-1/)
 
+## Project Introduction
+
+[Presentation Loom Video](https://www.loom.com/share/eee8ee2a34a04f3f84726993bec85dc0)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**This project is the presentation of a fictional event website for mobile and desktop. It was built based on the [original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) idea by Cindy Shin in Behance applying the acquired knowledge about JavaScript, HTML, and CSS through this module.**
 
+## Installation
 
-To get a local copy up and running follow these simple example steps.
+Clone this repository (you must have [Git Installed](https://github.com/git-guides/install-git))
 
-### Prerequisites
+`git clone git@github.com:rskinnerc/capstone-project-1.git`
 
-### Setup
+Then, move to the newly created folder `capstone-project-1` using this command
 
-### Install
+`cd capstone-project-1`
 
-### Usage
+To open the project in Visual Studio Code type the following command inside the _capstone-project-1_ folder
 
-### Run tests
+`code .`
 
-### Deployment
-
-
+In order to visualize the project in your browser either open the index.html file directly from the file explorer or consider using a [live server for development ](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## Authors
 
-👤 **Author1**
+👤 **Ronald Skinner**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@rskinnerc](https://github.com/rskinnerc)
+- Twitter: [@XSkinner](https://twitter.com/XSkinner)
 
 ## 🤝 Contributing
 
@@ -64,9 +57,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Original design idea by Cindy Shin in Behance.
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- To all my stand up teams, morning session groups and coding/learning partners
 
 ## 📝 License
 
